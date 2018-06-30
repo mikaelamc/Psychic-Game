@@ -8,9 +8,9 @@ h1 {
    width: 596px;
    height: 100px;
    color: pink;
-   position: relative;
    left: 200px;
-   margin-top: 201px;
+   margin: auto;
+   margin-top: 150px;
    padding-bottom: 300px;
    padding-top: 228px;
    border: solid 20px; 
@@ -21,8 +21,16 @@ h1 {
 p {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    bottom: 173px;
     left: -278px;
+    margin: auto;
+    margin-top: -150px
+
+}
+
+body {
+    background: url("../Images/flowers.jpeg");
+    background-size: 2000px 1800px;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }

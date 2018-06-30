@@ -1,5 +1,6 @@
 
 
+
 var options = ["f", "l", "o", "w", "e", "r"];
 var wins = 0;
 var losses = 0;
@@ -19,8 +20,12 @@ document.onkeyup = function() {
     if (userGuess=='f' || userGuess=='l' || userGuess=='o' || userGuess=='w'|| userGuess=='e' || userGuess=='r') { 
         if ((userGuess==computerGuess)) {
             alert("You Have Chosen Correctly!");
-            wins++;
             alert("wins: " + wins);
+            wins++; 
+            document.getElementById('#wins').innerHTML = wins;
+
+            
+           
         } 
         if ((userGuess=='f') && (computerGuess=='l')) {
             losses++;
@@ -177,11 +182,11 @@ document.onkeyup = function() {
         }
     
 
-        var html = "<p>Press letter keys that are in the word Flower to start playing!</p>" +
-        "<p>wins: " + wins + "</p>" +
-        "<p>losses: " + losses + "</p>";
+        // var html = "<p>Press letter keys that are in the word Flower to start playing!</p>" +
+        // "<p>wins: " + wins + "</p>" +
+        // "<p>losses: " + losses + "</p>";
 
-        document.querySelector('#game').innerHTML = html;
+        // document.getElementById('#wins').innerHTML = wins;
     
 
     
